@@ -1,0 +1,81 @@
+.recovery-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #0FC2C0, #008F8C);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 2s ease-out;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 8px solid #e6f7f6;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  animation: float 4s infinite ease-in-out;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #e6f7f6;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.4rem;
+  max-width: 650px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  animation: fadeInUp 2s ease-out;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.links a:hover {
+  background-color: #e6f7f6;
+  color: #008F8C;
+  transform: scale(1.05);
+}
+
+.download-button {
+  background-color: white;
+  color: #008F8C;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #0CABA8;
+  color: white;
+  transform: scale(1.05);
+}

@@ -1,0 +1,102 @@
+.subject-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #e6f7f6;
+  color: #015958;
+  min-height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-out;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05); /* Efeito de zoom na foto */
+}
+
+h1 {
+  font-size: 2rem;
+  color: #023535;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #023535;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subject-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.subject-links a {
+  text-decoration: none;
+  color: #0FC2C0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.subject-links a:hover {
+  background-color: #015958;
+  color: white;
+  transform: translateY(-3px); /* Efeito de elevação */
+  border-color: #0FC2C0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+
+  .subject-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

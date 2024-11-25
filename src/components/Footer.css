@@ -1,0 +1,28 @@
+.footer {
+  background-color: #023535;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.footer .social-links a {
+  text-decoration: none;
+  color: #e6f7f6;
+  margin: 0 15px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #0FC2C0;
+  transform: scale(1.2);
+}
